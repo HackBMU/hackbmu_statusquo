@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FourButtonActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/view_middle"
+        android:layout_marginBottom="55dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_help_someone"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#85ed7d"
+            android:padding="2dp"
+            android:src="@drawable/common_google_signin_btn_text_light"
+            android:text="Help Someone" />
+
+        <Button
+            android:id="@+id/btn_my_helmet"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#85ed7d"
+            android:padding="2dp"
+            android:src="@drawable/common_google_signin_btn_text_light"
+            android:text="My Helmet" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_middle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:background="#111" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view_middle"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btn_accident_prone_areas"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="#85ed7d"
+            android:padding="2dp"
+            android:src="@drawable/common_google_signin_btn_text_light"
+            android:text="Accident Prone Areas" />
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="#85ed7d"
+            android:padding="2dp"
+            android:src="@drawable/common_google_signin_btn_text_light"
+            android:text="My Helmet" />
+
+    </LinearLayout>
+
+</RelativeLayout>
