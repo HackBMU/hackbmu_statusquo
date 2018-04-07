@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FourButton.HelpSomeoneButton">
+    tools:context=".FourButton.HelpSomeoneActivity">
+
+    <ImageView
+        android:id="@+id/iv_alert_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/alert" />
 
     <TextView
+        android:id="@+id/tv_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Help someone!"/>
+        android:layout_below="@+id/iv_alert_photo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center"
+        android:text="Send a help alert to nearby people!"
+        android:textColor="#333"
+        android:textSize="22sp" />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_curr_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_heading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Your loc is ............"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_help_text"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_curr_loc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/border_edittext"
+        android:focusable="false"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:padding="2dp"
+        android:text="Urgently help needed! \n Send someone really fast!" />
+
+    <Button
+        android:id="@+id/btn_help_someone"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_help_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="SEND" />
+
+</RelativeLayout>

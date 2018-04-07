@@ -26,8 +26,7 @@
         android:layout_marginRight="30dp"
         android:fontFamily="sans-serif-condensed"
         android:gravity="center"
-        android:text="StatusOuo"
-
+        android:text="Status Quo"
         android:textSize="50dp" />
 
     <EditText
@@ -72,10 +71,9 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:layout_marginTop="10dp"
-        android:background="#54a645"
+        android:background="@color/colorPrimary"
         android:text="Login"
         android:textColor="#ffffff"
         android:textSize="18dp" />
-
 
 </RelativeLayout>

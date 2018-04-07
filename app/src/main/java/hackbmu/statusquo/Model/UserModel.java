@@ -1,9 +1,8 @@
 package hackbmu.statusquo.Model;
 
 public class UserModel {
-String name, hardwareid,userId , mobile;
-Double lat, lon;
-
+    String name, hardwareid, userId, mobile;
+    Double lat, lon;
 
     public UserModel() {
     }
@@ -57,7 +56,6 @@ Double lat, lon;
     }
 
     public UserModel(String name, String hardwareid, String userId, String mobile, Double lat, Double lon) {
-
         this.name = name;
         this.hardwareid = hardwareid;
         this.userId = userId;

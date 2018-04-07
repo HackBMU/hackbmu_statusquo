@@ -24,12 +24,13 @@ public class LoginActivity extends AppCompatActivity {
 
         email.setText("sk@gmail.com");
         pass.setText("112233");
+        hardId.setText("SH-987651");
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (email.getText().toString().equals("sk@gmail.com") && pass.getText().toString().equals("112233")) {
-                    startActivity(new Intent(LoginActivity.this, FourButtonActivity.class).putExtra("hardId", "qwerty").putExtra("email","sk@gmail.com"));
+                    startActivity(new Intent(LoginActivity.this, FourButtonActivity.class).putExtra("hardID", "SH-987651").putExtra("email","sk@gmail.com"));
                 }
             }
         });

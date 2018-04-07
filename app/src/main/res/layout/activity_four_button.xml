@@ -4,35 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
     tools:context=".FourButtonActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="serif"
+        android:text="Finger Buttons"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
     <LinearLayout
+        android:id="@+id/ll_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/view_middle"
-        android:layout_marginBottom="55dp"
+        android:layout_marginBottom="30dp"
         android:gravity="center"
         android:padding="10dp">
 
         <Button
             android:id="@+id/btn_help_someone"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="50dp"
-            android:background="#85ed7d"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
             android:padding="2dp"
             android:src="@drawable/common_google_signin_btn_text_light"
-            android:text="Help Someone" />
+            android:text="Help Someone"
+            android:textColor="#fff" />
 
         <Button
             android:id="@+id/btn_my_helmet"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="#85ed7d"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:padding="2dp"
             android:src="@drawable/common_google_signin_btn_text_light"
-            android:text="My Helmet" />
+            android:text="My Helmet"
+            android:textColor="#fff" />
 
     </LinearLayout>
 
@@ -44,31 +57,33 @@
         android:background="#111" />
 
     <LinearLayout
+        android:id="@+id/ll_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/view_middle"
-        android:layout_marginTop="55dp"
+        android:layout_marginTop="30dp"
         android:gravity="center"
         android:padding="10dp">
 
         <Button
             android:id="@+id/btn_accident_prone_areas"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginEnd="50dp"
-            android:layout_marginRight="50dp"
-            android:background="#85ed7d"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
             android:padding="2dp"
             android:src="@drawable/common_google_signin_btn_text_light"
-            android:text="Accident Prone Areas" />
+            android:text="Accident Prone Areas"
+            android:textColor="#fff" />
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:background="#85ed7d"
+            android:id="@+id/btn_handle_lights"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:padding="2dp"
             android:src="@drawable/common_google_signin_btn_text_light"
-            android:text="My Helmet" />
+            android:text="Handle Lights"
+            android:textColor="#fff" />
 
     </LinearLayout>
 

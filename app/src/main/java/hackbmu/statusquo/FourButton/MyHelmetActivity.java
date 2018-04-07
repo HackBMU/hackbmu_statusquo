@@ -1,15 +1,9 @@
 package hackbmu.statusquo.FourButton;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -30,7 +24,7 @@ public class MyHelmetActivity extends Activity implements GoogleApiClient.Connec
 
 
     // LogCat tag
-   // private static final String TAG = MainActivity.class.getSimpleName();
+    // private static final String TAG = MainActivity.class.getSimpleName();
 
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 1000;
 
@@ -81,11 +75,9 @@ public class MyHelmetActivity extends Activity implements GoogleApiClient.Connec
 
     /**
      * Method to display the location on UI
-     * */
+     */
     @SuppressLint("MissingPermission")
     private void displayLocation() {
-
-
         mLastLocation = LocationServices.FusedLocationApi
                 .getLastLocation(mGoogleApiClient);
 
@@ -96,15 +88,13 @@ public class MyHelmetActivity extends Activity implements GoogleApiClient.Connec
             lblLocation.setText(latitude + ", " + longitude);
 
         } else {
-
-            lblLocation
-                    .setText("(Couldn't get the location. Make sure location is enabled on the device)");
+            lblLocation.setText("Couldn't get your location! Make sure your GPS is enabled on the device.");
         }
     }
 
     /**
      * Creating google api client object
-     * */
+     */
     protected synchronized void buildGoogleApiClient() {
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -114,7 +104,7 @@ public class MyHelmetActivity extends Activity implements GoogleApiClient.Connec
 
     /**
      * Method to verify google play services on the device
-     * */
+     */
     private boolean checkPlayServices() {
         int resultCode = GooglePlayServicesUtil
                 .isGooglePlayServicesAvailable(this);
@@ -144,7 +134,6 @@ public class MyHelmetActivity extends Activity implements GoogleApiClient.Connec
     @Override
     protected void onResume() {
         super.onResume();
-
         checkPlayServices();
     }
 
@@ -159,7 +148,6 @@ public class MyHelmetActivity extends Activity implements GoogleApiClient.Connec
 
     @Override
     public void onConnected(Bundle arg0) {
-
         // Once connected with google api, get the location
         displayLocation();
     }
