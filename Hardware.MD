@@ -10,35 +10,35 @@ Another added funtionality we've used is RFID. RFID tags send out a fixed freque
 
 ### Raspberry Pi
 
-*SoC: Broadcom BCM2837
-*CPU: 4× ARM Cortex-A53, 1.2GHz
-*GPU: Broadcom VideoCore IV
-*RAM: 1GB LPDDR2 (900 MHz)
-*Networking: 10/100 Ethernet, 2.4GHz 802.11n wireless
-*Bluetooth: Bluetooth 4.1 Classic, Bluetooth Low Energy
-*Storage: microSD
-*GPIO: 40-pin header, populated
-*Ports: HDMI, 3.5mm analogue audio-video jack, 4× USB 2.0, Ethernet, Camera Serial Interface (CSI), Display Serial Interface (DSI)
+1.  SoC: Broadcom BCM2837
+2.  CPU: 4× ARM Cortex-A53, 1.2GHz
+3.  GPU: Broadcom VideoCore IV
+4.  RAM: 1GB LPDDR2 (900 MHz)
+5.  Networking: 10/100 Ethernet, 2.4GHz 802.11n wireless
+6.  Bluetooth: Bluetooth 4.1 Classic, Bluetooth Low Energy
+7.  Storage: microSD
+8.  GPIO: 40-pin header, populated
+9.  Ports: HDMI, 3.5mm analogue audio-video jack, 4× USB 2.0, Ethernet, Camera Serial Interface (CSI), Display Serial Interface (DSI)
 
 ### Arduino
 
-*Microcontroller: ATmega328P
-*Operating Voltage: 5V
-*Input Voltage (recommended): 7-12V
-*Input Voltage (limit): 6-20V
-*Digital I/O Pins:	14 (of which 6 provide PWM output)
-*PWM Digital I/O Pins: 6
-*Analog Input Pins: 6
-*DC Current per I/O Pin:	20 mA
-*DC Current for 3.3V Pin:	50 mA
-*Flash Memory:	32 KB (ATmega328P) of which 0.5 KB used by bootloader
-*SRAM:	2 KB (ATmega328P)
-*EEPROM: 1 KB (ATmega328P)
-*Clock Speed: 16 MHz
-*LED_BUILTIN: 13
-*Length:	68.6 mm
-*Width:	53.4 mm
-*Weight:	25 g
+1. Microcontroller: ATmega328P
+2. Operating Voltage: 5V
+3. Input Voltage (recommended): 7-12V
+4. Input Voltage (limit): 6-20V
+5. Digital I/O Pins:	14 (of which 6 provide PWM output)
+6. PWM Digital I/O Pins: 6
+7. Analog Input Pins: 6
+8. DC Current per I/O Pin:	20 mA
+9. DC Current for 3.3V Pin:	50 mA
+10. Flash Memory:	32 KB (ATmega328P) of which 0.5 KB used by bootloader
+11. SRAM:	2 KB (ATmega328P)
+12. EEPROM: 1 KB (ATmega328P)
+13. Clock Speed: 16 MHz
+14. LED_BUILTIN: 13
+15. Length:	68.6 mm
+16. Width:	53.4 mm
+17. Weight:	25 g
 
 ### Python Interface
 
