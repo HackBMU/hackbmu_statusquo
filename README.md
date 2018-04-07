@@ -3,6 +3,8 @@
 Status Quo is an application based on an Android, our application uses API v21 and above. We are using Firebase which is a RealTime database which serves as the NoSQL database entity model.
 The Firebase keeps looking for any change in the existing model to take decisions accordingly. It’s secure using its own authentication and sends notification using the Status Quo app.
 
+[HardWare ReadMe.](https://github.com/HackBMU/hackbmu_statusquo/blob/master/Hardware.MD)
+
 ## Working
 
 When the request is raised our algorithm checks for all registered users and notifies selected users using a push notification :- 
@@ -15,10 +17,18 @@ When the request is raised our algorithm checks for all registered users and not
 ## Technologies 
 
 StatusQuo uses these technologies:
-1.	Java 
+1.	Java and Kotlin
 2.	XML
-3.	NodeJS - Cloud storage, cloud 
-4.	Firebase - Cloud Messaging, Realtime Database, Authorisation.
+3.	NodeJS 
+4.	Firebase - Cloud Messaging, Realtime Database, Authentication, Storage.
+5.  Python 3.6
+6.  Firebase Rest API in Python.
+7.  Raspberry Pi 3 GPIO.
+8.  RF-ID tags and recievers.
+9.  Arduino UNO R3.
+10. JSON web tokens.
+11. Google Text To Speech.
+12. Python libraries like idna, chardet, urlib3, etc.
 
 ## Goals
 
