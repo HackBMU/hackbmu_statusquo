@@ -39,3 +39,7 @@ LED_BUILTIN: 13
 Length:	68.6 mm
 Width:	53.4 mm
 Weight:	25 g
+
+# Python Interface
+
+The Raspberry Pi communicates with the firebase using python. The python communicates with the python using REST API of firebase which uses modules and libraries such as idna, chardet, urlib3 etc. The python communicates with the raspberry pi gpio pins using its RPIO API which uses various modules such as GPIO and various functions such as GPIO.setmode(), GPIO.cleanup(), GPIO.input() ,GPIO.setWarnings().
