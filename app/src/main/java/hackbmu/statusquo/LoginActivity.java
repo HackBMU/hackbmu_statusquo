@@ -29,7 +29,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (email.getText().toString().equals("sk@gmail.com") && pass.getText().toString().equals("112233")) {
-                    startActivity(new Intent(LoginActivity.this, FourButtonActivity.class).putExtra("hardId", "abcd"));
+                    startActivity(new Intent(LoginActivity.this, FourButtonActivity.class).putExtra("hardId", "qwerty").putExtra("email","sk@gmail.com"));
                 }
             }
         });
