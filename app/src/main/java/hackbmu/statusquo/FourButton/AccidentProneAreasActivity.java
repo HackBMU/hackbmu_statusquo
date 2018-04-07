@@ -73,22 +73,12 @@ public class AccidentProneAreasActivity extends AppCompatActivity implements OnM
             Log.e("Maps", "" + e);
         }
         mMap.setIndoorEnabled(true);
-        LatLng ymca = new LatLng(28.3674761, 77.3169494);
+        LatLng ymca = new LatLng(28.2476041, 76.8133501);
         CameraPosition target = CameraPosition.builder().target(ymca).zoom((float) 17.6).bearing(82).tilt(30).build();
 
         MarkerOptions defaultMarker = new MarkerOptions().position(ymca).title("YMCA University of Science and Technology").snippet("Elements Culmyca'17");
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.367732, 77.317092)).title("Main Stage"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.367005, 77.316748)).title("Shakuntalam Stage"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.367354, 77.316411)).title("Library"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.367297, 77.316722)).title("Computer Department"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.366900, 77.316433)).title("Cafe"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.367726, 77.316985)).title("BasketBall Court"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.367250, 77.315419)).title("Parking"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.366504, 77.316674)).title("Mechanical Department"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.367727, 77.317602)).title("MBA Department"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.368086, 77.317457)).title("VC Residence"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.366887, 77.317800)).title("Girls' Hostel"));
-        mMap.addMarker(new MarkerOptions().position(new LatLng(28.367418, 77.316191)).title("Electrical Chowk"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(28.257948811586367, 76.82490642025357)).title("Accident Prone Area"));
+        mMap.addMarker(new MarkerOptions().position(new LatLng(28.241398394868284, 76.81219609568075)).title("Accident Prone Area"));
 
         mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
 
